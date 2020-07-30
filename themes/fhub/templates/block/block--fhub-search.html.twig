@@ -1,0 +1,88 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+
+<div class="w3ls_right_nav ml-auto d-flex">
+  <!-- search form -->
+  <form class="nav-search form-inline my-0 form-control" action="#" method="post">
+    <select class="form-control input-lg" name="category">
+      <option value="all">Search our store</option>
+      <optgroup label="Mens">
+        <option value="T-Shirts">T-Shirts</option>
+        <option value="coats-jackets">Coats & Jackets</option>
+        <option value="Shirts">Shirts</option>
+        <option value="Suits & Blazers">Suits & Blazers</option>
+        <option value="Jackets">Jackets</option>
+        <option value="Sweat Shirts">Trousers</option>
+      </optgroup>
+      <optgroup label="Womens">
+        <option value="Dresses">Dresses</option>
+        <option value="T-shirts">T-shirts</option>
+        <option value="skirts">Skirts</option>
+        <option value="jeans">Jeans</option>
+        <option value="Tunics">Tunics</option>
+      </optgroup>
+      <optgroup label="Girls">
+        <option value="Dresses">Dresses</option>
+        <option value="T-shirts">T-shirts</option>
+        <option value="skirts">Skirts</option>
+        <option value="jeans">Jeans</option>
+        <option value="Tops">Tops</option>
+      </optgroup>
+      <optgroup label="Boys">
+        <option value="T-Shirts">T-Shirts</option>
+        <option value="coats-jackets">Coats & Jackets</option>
+        <option value="Shirts">Shirts</option>
+        <option value="Suits & Blazers">Suits & Blazers</option>
+        <option value="Jackets">Jackets</option>
+        <option value="Sweat Shirts">Sweat Shirts</option>
+      </optgroup>
+    </select>
+    <input class="btn btn-outline-secondary  ml-3 my-sm-0" type="submit" value="Search">
+  </form>
+  <!-- search form -->
+  <div class="nav-icon d-flex">
+    <!-- sigin and sign up -->
+    <a class="text-dark login_btn align-self-center mx-3" href="#myModal_btn" data-toggle="modal" data-target="#myModal_btn">
+      <i class="far fa-user"></i>
+    </a>
+    <!-- sigin and sign up -->
+    <!-- shopping cart -->
+    <div class="cart-mainf">
+      <div class="hubcart hubcart2 cart cart box_1">
+        <form action="#" method="post">
+          <input type="hidden" name="cmd" value="_cart">
+          <input type="hidden" name="display" value="1">
+          <button class="btn top_hub_cart mt-1" type="submit" name="submit" value="" title="Cart">
+            <i class="fas fa-shopping-bag"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- //shopping cart ends here -->
+  </div>
+</div>

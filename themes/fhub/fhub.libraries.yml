@@ -1,0 +1,32 @@
+fhub-style:
+  css:
+    theme:
+      css/bootstrap.css: {}
+      css/checkout.css: {}
+      css/creditly.css: {}
+      css/easy-responsive-tabs.css: {}
+      css/faq.css: {}
+      css/flexslider.css: {}
+      css/fontawesome-all.min.css: {}
+      css/jquery-ui1.css: {}
+      css/owl.carousel.min.css: {}
+      css/style.css: {}
+      //fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900: { type: external }
+      //fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900 : { type: external }
+
+  js:
+    js/bootstrap.js: {}
+    js/creditly.js: {}
+    js/easing.js: {}
+    js/easy-responsive-tabs.js: {}
+    js/fontawesome.min.js: {}
+    js/imagezoom.js: {}
+    js/jquery.flexslider.js: {}
+    js/jquery-ui.js: {}
+    js/minicart.js: {}
+    js/move-top.js: {}
+    js/owl.carousel.js: {}
+    js/responsiveslides.min.js: {}
+    js/SmoothScroll.min.js: {}
+  dependencies:
+    - core/jquery

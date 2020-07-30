@@ -1,0 +1,20 @@
+name: Fashion hub theme
+type: theme
+core: 8.x
+screenshot: fhubscreenshot.png
+
+libraries:
+  - fhub/fhub-style
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  jumbotron: 'Jumbotron'
+  breadcrumb: 'Breadcrumb'
+  message: 'Message'
+  content: 'Content'
+  footer1: 'Footer 1'
+  footer2: 'Footer 2 - menu'
+  footer3: 'Footer 3 - copyright'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
