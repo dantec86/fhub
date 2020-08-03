@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * Implements fhub_preprocess_block__system_branding_block() for block
+ * templates.
+ */
+function fhub_preprocess_block(&$variables) {
+  $blocks_to_apply_custom_css = [
+    'customblocksupport',
+    'views_block__view_latest_blog_block_1',
+    'views_block__view_office_locations_block_1',
+    'customblockflickrposts',
+    'views_block__view_popular_tags_block_1',
+  ];
+  $css_classes = 'col-sm-6 footer-v2grid';
+  foreach ($blocks_to_apply_custom_css as $block) {
+    if ($variables['elements']['#id'] == $block) {
+      $variables['attributes']['class'][] = $css_classes;
+
+      if($block == $blocks_to_apply_custom_css[0]){
+        $variables['attributes']['class'][] = 'col-lg-2';
+      }
+
+      if($block == $blocks_to_apply_custom_css[1]){
+        $variables['attributes']['class'][] = 'col-lg-3 mt-sm-0 mt-5';
+      }
+
+      if($block == $blocks_to_apply_custom_css[2]){
+        $variables['attributes']['class'][] = 'col-lg-2 my-lg-0 my-5';
+      }
+
+      if($block == $blocks_to_apply_custom_css[3]){
+        $variables['attributes']['class'][] = 'col-lg-3 my-lg-0 my-sm-5';
+      }
+
+      if($block == $blocks_to_apply_custom_css[4]){
+        $variables['attributes']['class'][] = 'col-lg-2 mt-sm-0 mt-5';
+      }
+    }
+  }
+
+}
